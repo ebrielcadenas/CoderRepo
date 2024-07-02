@@ -1,0 +1,240 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+background-image: url(../img/selva2.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+background-position:inherit;
+width: 100%;
+height: 100%;
+text-align: center;
+}
+
+
+/* main */
+main{
+    height: 100%;
+    width: 100%;
+}
+/* mi header*/
+
+body .miHeader {
+    background-image: url(../img/marheader.jpg);
+    background-position:center;
+    background-size: cover;
+    border: 3px inset white;
+    border-radius: 20px; 
+    width: 100%;
+    height: 60vh;
+    /* overflow: hidden; */
+}
+/* imagen de la nav */
+header .padreLogo{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 20vh;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.logo{
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(309deg) brightness(103%) contrast(103%);
+}
+/* mi navigator */
+.navigator{
+    height: 100%;
+    overflow-wrap: normal;
+}
+.padreNav{
+    display: flex;
+    padding: 20px 10px 20px 20px;
+    height: 40vh;
+    
+}
+/* mis botones de nav */
+header nav .botonPadre{
+    display: flex;
+    flex-direction:column;
+    align-items: stretch;
+    justify-content: space-between;
+    width: 80vh;
+    height: 100%;
+}
+
+header nav ul .botonHijo{
+    background-color: #fffa;
+    border: 3px inset black;
+    border-radius: 4px;
+    list-style: none;
+}
+
+nav ul li a{
+    color:black;
+    padding: 5px ;
+    text-decoration: none;
+    text-transform: unset;
+
+}
+/* mi main */
+h1{
+    font-family: raleway;
+    border: 5px solid white;
+    border-radius: 4px;
+    text-align: center;
+    overflow: hidden;
+    /* position: fixed; */
+    text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+}
+/* mi galeria*/
+main .padrePortada{
+    display: flex;
+    flex-flow: row wrap ;
+    justify-content: space-around;
+    padding-top: 34px;
+}
+.portada{
+    width: 170px;
+    height: 150px;
+    border-radius: 6px;
+    padding: 20px;
+    margin: 5px;
+    border: solid 5px black;
+}
+
+
+
+.imgIndex{
+    display: inline-block;
+    width: 40px;
+    height: 50px;
+}
+.videoPadre{
+    width: 100%;
+}
+.videoHijo{
+    padding: 10px 10px 10px 10px;
+}
+
+/* footer*/
+footer{
+    background-image: url(../img/marfooter.jpg);
+    background-position:center;
+    background-size: cover;
+    border: 3px inset white;
+    border-radius: 20px; 
+    width: 100%;
+    height: 20vh;
+    overflow: hidden;
+}
+footer article .padreFooter{
+    display:flex;
+    justify-content: end;
+    align-items: center;
+    list-style: none;
+}
+footer article ul .hijoFooter{
+    border: 8px solid #fffa;
+    margin: 10px 5px 10px;
+    border-radius: 3px;
+}
+
+@media screen and (min-width: 480px){
+    
+header nav ul .botonHijo{
+    background-color:#fffa;
+}
+    header nav .padreNav{
+        display: flex;
+        justify-content: center;
+    
+    }
+    header nav .botonPadre{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .botonHijo{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    h1{
+        border: 5px solid #fffa;
+    }
+    .galeria{
+display: grid;
+grid-template-columns:repeat(auto-fill,320px) ;
+grid-template-rows: auto;
+margin: auto;
+padding-inline: 2rem;
+justify-content: space-evenly;
+grid-gap: 2rem;
+width: 320px;
+}
+.galeria .grid-items{
+    background-color: #205375;
+    border: 4px inset #fffa;
+}
+    }
+@media screen and (min-width:780px){
+header nav .padreLogo{
+        display: flex;
+        justify-content: flex-start;
+    }
+    .padreNav{
+        display: flex;
+        justify-content: center;
+    }
+    header nav .botonPadre{
+    width: 100%;
+    }
+    header nav .botonHijo{
+        border: 4px solid #205375;
+        border-radius: 4px;
+    }
+    .galeria{
+    width: 100%;
+
+}
+.galeria .grid-items{
+    background-color: #205375;
+    border: 2px solid #f66b0e;
+    border-radius: 0.25rem;
+}
+
+}
+@media screen and (min-width:1080px){
+
+body .miHeader{
+        height: 25vh;
+    }
+body .pHeader{
+    height: 35vh;
+}
+header .padreLogo{
+    height: 15vh;
+}
+header nav .padreNav{
+    height: 100%;
+
+    
+}
+    header nav .botonPadre{
+    display: flex;
+    justify-content: end;
+    align-items: flex-start;
+    gap: 50px;
+    height: 100%;
+}
+    h1{
+    border: 5px solid #f66b0e;
+}
+    .galeria .grid-items{
+    border-radius: 7px;
+}
+
+}
